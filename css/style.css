@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins' sans-serif;
+}
+p{
+    font-weight: 400px;
+    font-size: 17px;
+    line-height: 26px;
+    color: #6C6C6C;
+
+}
+header{
+    background: #2D25A0;
+    padding: 50px 150px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.container{
+    padding: 150px;
+}
+.section1{
+    background: #2D25A0;
+    padding-top: 0px;
+
+}
+.sec1{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 50%
+}
+.sec1 h1{
+    color: white;
+    font-size: 64px;
+    padding-bottom: 30px;
+}
+.sec1 a{
+    text-decoration: none;
+    color: white;
+    background: #E02C6D;
+    padding: 10px 20px;
+     
+}
+.right{
+    width: 50%
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    transition:  1.5s;
+}
+.right img:hover {
+     transform: scale(1.3) rotate(30deg);
+
+
+  }
+
+
+
+
+/*----------------
+ player section
+---------------- */
+
+.players {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px ;
+}
+.player{
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 255, 0.3);    padding: 15px;
+    overflow: hidden;
+}
+.player h2{
+    margin: 10px 0;
+}
+.player-link{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.player-link:hover{
+    color: #E02C6D ;
+}
+.player img{
+    
+  max-width: 100%;
+  transition: 0.3s ;
+
+}
+.player img:hover {
+    transform: scale(1.05);
+
+ }
+
+/* section 2 ENDS */
+
+/*--------------
+Form section
+--------------- */
+
+.sec3{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.sec3 h1{
+    color: #2D25A0;
+    padding-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, button{
+    font-size: 1.2em;
+    margin-top: 15px;
+    border: 1px solid lightskyblue;
+    
+    padding-left: 10px;
+}
+form button{
+    background-color: skyblue;
+    color: whitesmoke;
+    padding: 5px 0;
+    border-radius: 20px;
+    color: grey;
+    border: 2px solid #2d25a073 ;
+}
+
+/* section 3 ENDS */
+footer{
+    text-align: center;
+    margin: 100px 0;
+}
+.logo img{
+    width: 35%;
+}
+.icon i{
+    font-size: 32px;
+    margin: 10px;
+    color: grey;
+}
+footer h3{
+    padding-top: 20px;
+}
+/* footer ENDS */
+
+/* -----------
+Media Query Starts
+--------------*/
+
+
+/* --------------------
+Mobile devices
+--------------------- */
+
+ 
+
+@media only screen and (max-width:688px) {
+    header{
+        padding: 50px ;
+    }
+    nav a {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    .sec1{
+        display: block;
+        text-align: center;
+    }
+    .sec1 h1{
+        font-size: 45px;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        padding: 20% 0;
+        width: 100%;
+    }
+    /* player section */
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer section */
+    .logo img {
+        width: 50%;
+    }
+    .icon i {
+        font-size: 20px;
+    }
+      
+}
+
+/* --------------------
+Tablet devices
+--------------------- */
+  
+@media only screen and (min-width:689px) and (max-width:992px){
+    header{
+        padding: 50px 100px ;
+    }
+
+    .container {
+        padding: 100px;
+    }
+    .sec1 h1{
+        font-size: 30px;
+    }
+    .left {
+        width: 40%;
+    }
+    .right {
+        width: 60%;
+    }
+
+    /* player section */
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* footer section */
+     .logo img {
+        width: 50%;
+    }
+    .icon i {
+        font-size: 25px;
+    }
+  
+}
+
+/*-----------
+ for pc
+ --------- */
+ @media only screen and (min-width:992px) and (max-width:1200px)
+ {
+     .sec1 h1{
+         font-size: 40px;
+     }
+     .left{
+         width: 40%;
+     }
+     .right{
+         width: 60%;
+     }
+ }
