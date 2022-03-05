@@ -80,6 +80,11 @@ nav a{
 /*----------------
  player section
 ---------------- */
+.about-players h1{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
 
 .players {
     
@@ -115,6 +120,8 @@ nav a{
  }
 
 /* section 2 ENDS */
+
+
 
 /*--------------
 Form section
